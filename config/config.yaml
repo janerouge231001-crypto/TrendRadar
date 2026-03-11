@@ -113,17 +113,78 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-     - id: "eu-commission"
-      name: "欧盟委员会官方"
-      url: "https://ec.europa.eu/commission/presscorner/home_en/rss.xml"
+
+# 🔴 版权合规核心源      
+     - id: "copyright-office-us"
+      name: "美国版权局官方动态"
+      url: "https://blogs.loc.gov/copyright/feed/"
       # max_age_days: 3               # 示例：只推送3天内的文章
       
-     - id: "us-ftc"
-      name: "美国 FTC 官方"
-      url: "https://www.ftc.gov/news-events/press-releases/rss.xml"
-      # max_age_days: 3               # 示例：只推送3天内的文章
+     - id: "uk-ipo-copyright"
+      name: "英国知识产权局版权动态"
+      url: "https://ipo.blog.gov.uk/category/copyright/feed/"
+      # max_age_days: 2               # 示例：只推送2天内的文章
+     
+     - id: "michael-geist-copyright"
+      name: "国际版权法专家博客"
+      url: "https://michaelgeist.ca/feed/"
+      # max_age_days: 2               # 示例：只推送2天内的文章      
+    
+    - id: "wipo-copyright-news"
+      name: "世界知识产权组织 WIPO 版权动态"
+      url: "https://www.wipo.int/pressroom/en/rss.xml"
+      # max_age_days: 2               # 示例：只推送2天内的文章
+
+# 🔴 数据隐私/监管核心源     
+    -  id: "iapp-main-news"
+      name: "IAPP 全球隐私合规主刊"
+      url: "https://iapp.org/rss/news/"
+      # max_age_days: 2               # 示例：只推送2天内的文章     
+
+    - id: "iapp-regulation"
+      name: "IAPP 全球监管与法律动态"
+      url: "https://iapp.org/rss/news/topic/regulation/"
+      # max_age_days: 2               # 示例：只推送2天内的文章      
+    
+    - id: "us-ftc-news"
+      name: "美国 FTC"
+      url: "https://www.ftc.gov/feeds/press-release.xml"
+      # max_age_days: 2               # 示例：只推送2天内的文章
+
+# 🔵 AI合规源 
+     - id: "iapp-ai-governance"
+      name: "IAPP AI 治理专项动态"
+      url: "https://iapp.org/rss/news/topic/ai-governance/"
+      # max_age_days: 2               # 示例：只推送2天内的文章   
       
-   - id: "hacker-news"
+      - id: "us-ai-regulation"
+      name: "美国国会 AI 监管动态"
+      url: "https://www.congress.gov/rss/most-viewed-bills.xml"
+      # max_age_days: 2               # 示例：只推送2天内的文章   
+      
+ # 🔴 内容审核/平台规则源     
+      - id: "appstore-rules"
+      name: "苹果 App Store 审核规则更新"
+      url: "https://developer.apple.com/news/rss/news.rss"
+      # max_age_days: 2               # 示例：只推送2天内的文章      
+   
+     - id: "googleplay-rules"
+      name: "Google Play 政策更新"
+      url: "https://android-developers.googleblog.com/feeds/posts/default"
+      # max_age_days: 2               # 示例：只推送2天内的文章
+     
+ # 🔴 行业+投融资源      
+      - id: "techcrunch-startups"
+      name: "TechCrunch 投融资动态"
+      url: "https://techcrunch.com/feed/"
+      # max_age_days: 2               # 示例：只推送2天内的文章
+      
+     - id: "venturebeat-ai"
+      name: "VentureBeat AI与科技投资"
+      url: "https://venturebeat.com/feed/"
+      # max_age_days: 2               # 示例：只推送2天内的文章
+          
+      - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
       # max_age_days: 1               # 示例：只推送1天内的文章
